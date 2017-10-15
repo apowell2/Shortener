@@ -1,0 +1,9 @@
+Url shortener
+<hr>
+<% @urls.each do |url|  %>
+<%#= link_to "/urls/#{url.short_url}", "/urls/#{url.short_url}"%>
+<%= url.short_url %>
+<%= url.long_url %>
+<hr>
+<% end %>
+<%= render 'form' %>
